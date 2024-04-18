@@ -1,17 +1,20 @@
 # Project 3 - ETL and Data Engineering
 ---
 **Brief Description**: This project applies basic ETL and Data Engineering principles to perform a cursory stock analysis of a small portfolio of five stocks:
-> - *Part 1: Database Design* - ETL workflows are used to ingest the data and tranform it prior to loading into a database (SQLite).
-> - *Part 2: Data and Delivery* - The data is read from the database created in the above step and visualized using Pandas Dataframe<br>
+> - *Part 1: Database Design* - ETL workflows are used to ingest the data and transform it prior to loading into a database (SQLite).
+> - *Part 2: Data and Delivery* - The data is read from the database created in the above step and visualized using Pandas Dataframe.<br>
 
-**Inputs**: The challenge takes in as input one of the many sample datasets that the [USGS GeoJson Page](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) provides. This is intended to be used as a programatic interface for applications.<br>
+**Inputs**: The project uses the following new libraries at various stages for the analysis:
+> - *yfinance* - Python library to seamlessly retrieve stock data from Yahoo Finance. It is a Python API to the Yahoo Finance site.
+> - *plotly express* - Built-in as part of the Plotly library that uses graph objects and can create entire figures at once.
+> - *Stock Portfolio* - The project uses a small sample of five large-cap stocks (Microsoft, Google, Apple, Intel and Oracle) for this analysis. <br>
 
-**Outputs**: The challenge provides the following outputs as described below:
-> - *Earthquake Plot Map*: Using Leaflet, a map that plots all the earthquakes from the sample dataset based on their longitude and latitude.    
-> - *Plot Legend*: A legend that provides more context on the above data including the depth and the corresponding color. 
-> - *Popups*: Popups that provide additional information about the earthquake when its associated marker is clicked.<br>
+**Outputs**: The following outputs are provided at different stages of this project:
+> - *Part 1: Database Design*: A detailed ETL workflow of the transformed data including the related ER diagram using QuickDBD is generated.    
+> - *Part 2: Data and Delivery*: Specific candle plots and scatter bubble plots that visualize the pricing trends of the stocks in the portfolio.  
+> - *Popups*: Popups that provide additional information about the specific price point when clicked.<br>
 
 **References**:
-> - GeoJson Documentation, https://doc.arcgis.com/en/arcgis-online/reference/geojson.htm, accessed April 2024.
-> - GeoJson in Leaflet - Custom Features, https://bookdown.org/sammigachuhi/book-leaflet/using-geojson-in-leaflet.html, accessed April 2024.
-> - Leaflet JS Reference - Map Events, https://leafletjs.com/reference.html#map-event, accessed April 2024. 
+> - Plotly Express Reference Guide, https://plotly.com/python/plotly-express/ accessed April 2024.
+> - Pandas Datareader for Yahoo, https://pandas-datareader.readthedocs.io/en/latest/remote_data.html#remote-data-yahoo, accessed April 2024.
+> - Bubble Charts using Plotly, https://plotly.com/python/bubble-charts/, accessed April 2024. 
