@@ -1,13 +1,22 @@
 # Project 3 - ETL and Data Engineering
 ---
 **Brief Description**: This project applies basic ETL and Data Engineering principles to perform a cursory stock analysis of a small portfolio of five stocks:
-> - *Part 1: Database Design* - ETL workflows are used to ingest the data and transform it prior to loading into a database (SQLite).
-> - *Part 2: Data and Delivery* - The data is read from the database created in the above step and visualized using Pandas Dataframe.<br>
+> - *Part 1: Database Design* - ETL workflows are used to ingest the data and transform it prior to loading it into a database (SQLite).
+
+
+![01](https://github.com/Adykey79/Project3_ETL_Data_Engineering/assets/149746353/576a5943-1ae5-414c-befb-d5566fb150e5)
+
+
+> - *Part 2: Data and Delivery* - The data is read from the database created in the above step and visualized using Pandas Dataframe.<be>
+
+
+![02](https://github.com/Adykey79/Project3_ETL_Data_Engineering/assets/149746353/7307d0b9-b609-4cf0-bdf8-10ca3a2670d4)
+
 
 **Inputs**: The project uses the following new libraries at various stages for the analysis:
-> - *yfinance* - Python library to seamlessly retrieve stock data from Yahoo Finance. It is a Python API to the Yahoo Finance site.
+> - *yfinance* - Python library to seamlessly retrieve stock data from Yahoo Finance. It is a Python API for the Yahoo Finance site.
 > - *plotly express* - Built-in as part of the Plotly library that uses graph objects and can create entire figures at once.
-> - *Stock Portfolio* - The project uses a small sample of five large-cap stocks (Microsoft, Google, Apple, Intel and Oracle) for this analysis. <br>
+> - *Stock Portfolio* - The project uses a small sample of five large-cap stocks (Microsoft, Google, Apple, Intel, and Oracle) for this analysis. <br>
 
 **Outputs**: The following outputs are provided at different stages of this project:
 > - *Part 1: Database Design*: A detailed ETL workflow of the transformed data including the related ER diagram using QuickDBD is generated.    
